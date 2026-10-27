@@ -2,7 +2,7 @@
 
 A simple, modular Python program for managing student records. It was built for the Python Object-Oriented Programming assignment (Semester 3, ICT) at Limkokwing University of Creative Technology, Sierra Leone, and follows Digital Public Goods (DPG) principles.
 
-**Domain:** Education
+**Domain:** EducatioN
 **Language:** Python 3 (no external libraries needed)
 
 ---
