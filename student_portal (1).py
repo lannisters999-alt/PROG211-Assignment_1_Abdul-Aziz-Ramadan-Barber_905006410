@@ -1,20 +1,4 @@
-"""
-Student Learning Portal - Digital Public Goods (DPG) Compliant
-Author: Limkokwing Student
-Description: A modular Python program demonstrating OOP, a dictionary data
-             structure, instance methods, and class methods for student
-             record management.
-
-DPG alignment:
-- Open source: code is shared openly on GitHub.
-- Privacy-respecting: only ID, name, age and major are stored.
-  No contact details, grades or other sensitive data.
-- Modular and reusable: each class has one clear job.
-- Inclusive: plain-language messages that are easy to read and follow.
-"""
-
-
-class Student:
+class Student():
     """Represents one student record (non-sensitive data only)."""
 
     # Class attributes
@@ -126,36 +110,36 @@ class StudentManager:
 
 # --- EXAMPLE USAGE & PROGRAM EXECUTION ---
 if __name__ == "__main__":
-    print("=== INITIALIZING LIMKOKWING EDUCATION DPG PORTAL ===\n")
+    print("=== INITIALIZING LIMKOKWING UNIVERSITY EDUCATION DPG PORTAL ===\n")
 
     manager = StudentManager()
 
     # 1. Adding records
-    manager.add_record("S001", "Aminata Conteh", 20, "Information Technology")
-    manager.add_record("S002", "Mohamed Kamara", 22, "Software Engineering")
-    manager.add_record("S003", "Fatmata Sesay", 21, "Multimedia Design")
+    manager.add_record("S905006410", "Micheal Tucker, 20, "Information Technology")
+    manager.add_record("S905006420", "Donald Sheku", 22, "Software Engineering")
+    manager.add_record("S905006430", "Joshua Mansaray", 21, "Multimedia Design")
 
     # 2. Error handling demonstration
     print("\n-> Testing error handling:")
-    manager.add_record("S001", "Duplicate Person", 25, "Business")  # duplicate ID
-    manager.add_record("S004", "Invalid Age", -5, "Business")       # bad age
+    manager.add_record("S905006410", "Duplicate Person", 25, "Business")  # duplicate ID
+    manager.add_record("S905006430", "Invalid Age", -5, "Business")       # bad age
 
     # 3. Displaying all records
     manager.display_records()
 
     # 4. Instance method: update a record
     print("-> Updating a record using an instance method...")
-    manager.records["S001"].update_record("Cyber Security")
+    manager.records["S905006410"].update_record("Cyber Security")
 
     # 5. Find and display one student
     print("\n-> Displaying info for a specific student:")
-    student = manager.find_record("S001")
+    student = manager.find_record("S905006410")
     if student:
         student.display_info()
 
     # 6. Remove a record
     print("\n-> Removing a record:")
-    manager.remove_record("S003")
+    manager.remove_record("S905006430")
     manager.remove_record("S999")  # does not exist
 
     # 7. Class method: total students
